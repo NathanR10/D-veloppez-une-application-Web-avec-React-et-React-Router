@@ -1,0 +1,55 @@
+.tale_frame {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 30px;
+  height: 300px;
+  text-decoration: none;
+}
+
+.tale_text {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  max-width: 170px;
+  text-shadow: 0 0 2px black;
+}
+
+@media (min-width: 1840px) {
+  .tale_frame {
+    width: calc(25% - 100px);
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1839px) {
+  .tale_frame {
+    width: calc(33% - 100px);
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1439px) {
+  .tale_frame {
+    width: calc(50% - 100px);
+  }
+}
+
+@media (min-width: 976px) and (max-width: 1039px) {
+  .tale_frame {
+    width: 100%;
+  }
+}
+
+@media (max-width: 975px) {
+  .tale_frame {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.textBanner_frame {
+  text-align: center;
+  padding: 78px 25px;
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight: 500;
+  font-size: 48px;
+  margin-top: 63px;
+  margin-bottom: 43px;
+  min-height: 58px;
+}
+
+@media (max-width: 975px) {
+  .textBanner_frame {
+    margin: 20px 0;
+    font-size: 24px;
+    padding: 30px 15px;
+    text-align: left;
+    border-radius: 10px;
+    min-height: 29px;
+  }
+}

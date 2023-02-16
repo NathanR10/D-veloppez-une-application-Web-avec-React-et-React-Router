@@ -1,0 +1,90 @@
+.lodging_tagFrame {
+  display: flex;
+  flex-direction: center;
+}
+
+.lodging_tagFrame {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.lodging_spoilerFrame {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 63px;
+}
+
+.lodging_title {
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.lodging_location {
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.lodging_headerFrame {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lodging_hostMainFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.lodging_hostFrame {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lodging_hostName {
+  color: #FF6060;
+  font-size: 18px;
+  text-align: right;
+}
+
+.lodging_hostPicture {
+  height: 64px;
+  width: 64px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 975px) {
+  .lodging_title {
+    font-size: 18px;
+  }
+
+  .lodging_location {
+    font-size: 14px;
+  }
+
+  .lodging_hostMainFrame {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .lodging_headerFrame {
+    flex-direction: column;
+  }
+
+  .lodging_spoilerFrame {
+    flex-direction: column;
+  }
+}

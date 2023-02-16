@@ -1,0 +1,22 @@
+.home_talesFrame,
+.home_talesFrame {
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  padding: 26px 20px;
+  margin-bottom: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home_lastTale {
+  flex: auto;
+}
+
+@media (max-width: 975px) {
+  .home_talesFrame {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+}

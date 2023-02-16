@@ -1,0 +1,67 @@
+.spoiler_frame {
+  width: calc(50% - 19px);
+  height: fit-content;
+  background-color: #F6F6F6;
+  border-radius: 10px;
+}
+
+.spoiler_labelFrame {
+  background-color: #FF6060;
+  padding: 13px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spoiler_label {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.spoiler_icon {
+  width: 23px;
+  height: 14px;
+}
+
+.spoiler_text {
+  padding: 25px 20px;
+  margin: 0;
+  color: #FF6060;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.spoiler_listFrame {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.spoiler_listItem {
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+  color: #FF6060;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 975px) {
+  .spoiler_frame {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .spoiler_label {
+    font-size: 13px;
+    line-height: 18.5px;
+  }
+
+  .spoiler_text {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 15px 12px;
+  }
+}
