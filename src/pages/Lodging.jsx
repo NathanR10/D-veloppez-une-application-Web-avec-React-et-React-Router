@@ -15,18 +15,20 @@ export default function Lodging() {
 
   useEffect(() => {
     axios.get('../lodgings.json')
-    .then((res) => {
-      setLodging(res.data.find(x => x.id === id))
-    })
-    .catch((err) => {
-      // console.log(err)
-      navigate('/404')
-    })
+      .then((res) => {
+        const data = res.data.find(x => x.id === id)
+        setLodging(data)
+        !data && navigate('/404')
+      })
+      .catch((err) => {
+        // console.log(err)
+        navigate('/404')
+      })
   }, [])
 
   return (
-    <div>
-      {lodging.pictures && (
+    <>
+      {lodging?.pictures && (
         <div>
           <Slider images={lodging.pictures} />
           <div className='lodging_headerFrame'>
@@ -36,7 +38,7 @@ export default function Lodging() {
               <div className='lodging_tagFrame'>
                 <FlatList
                   list={lodging.tags}
-                  renderItem={(item, i) => 
+                  renderItem={(item, i) =>
                     <Tag
                       key={i}
                       label={item}
@@ -60,6 +62,6 @@ export default function Lodging() {
           </div>
         </div>
       )}
-    </div>
+    </>
   )
 }

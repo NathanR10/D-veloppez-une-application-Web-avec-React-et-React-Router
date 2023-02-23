@@ -10,21 +10,21 @@ export default function Home() {
 
   useEffect(() => {
     axios.get('./lodgings.json')
-    .then((res) => {
-      setLodgings(res.data)
-    })
-    .catch((err) => {
-      console.log(err)
-    })
+      .then((res) => {
+        setLodgings(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }, [])
 
   return (
-    <div>
+    <>
       <TextBanner label={'Chez vous, partout et ailleurs'} img={'/bannerHome.png'} />
       <div className='home_talesFrame'>
         <FlatList
           list={lodgings}
-          renderItem={(item, i) => 
+          renderItem={(item) =>
             <Tale
               key={item.id}
               id={item.id}
@@ -36,6 +36,6 @@ export default function Home() {
         />
         <div className='home_lastTale'></div>
       </div>
-    </div>
+    </>
   )
 }

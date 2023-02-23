@@ -6,7 +6,7 @@ import '../styles/About.css'
 export default function About() {
 
   return (
-    <div>
+    <>
       <TextBanner label={''} img={'/bannerAbout.png'} />
       <div className='about_frame'>
         <Spoiler
@@ -30,6 +30,6 @@ export default function About() {
           content={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}
         />
       </div>
-    </div>
+    </>
   )
 }
