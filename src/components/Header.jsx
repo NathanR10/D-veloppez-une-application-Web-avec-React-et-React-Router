@@ -6,7 +6,9 @@ export default function Header() {
   const location = useLocation().pathname
   return (
     <nav className='header_nav'>
-      <img className='header_logo' src="/logo.png" />
+      <Link to="/">
+        <img className='header_logo' src="/logo.png" />
+      </Link>
       <div>
         <Link className='header_navLink' style={location === "/" ? { textDecoration: 'underline' } : null} to="/">
           Accueil
